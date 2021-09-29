@@ -37,3 +37,20 @@ function sum(arr,num){
     return max
   }
   console.log(sum([1,2,3,1,6,3,9,5,3],4))
+
+
+[1,1,0,1,1,1,0,1,1,1]
+function binary(arr){
+  let max = 0;
+  let temp =0;
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]===1){
+      temp += arr[i]
+      max = Math.max(max,temp)
+    }else{
+      temp =0;
+    }
+  }
+  return max
+}
+console.log(binary([1,1,0,1,1,1,0,1,1,1,1,1,1]))
